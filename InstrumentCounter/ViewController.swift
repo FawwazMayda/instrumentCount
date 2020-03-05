@@ -22,6 +22,12 @@ class ViewController: UIViewController {
     var guitarCount = 0
     var drumCount = 0
     var pianoCount = 0
+    func alert() {
+        let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
+        let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(action)
+        self.present(alert, animated: true, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -33,10 +39,7 @@ class ViewController: UIViewController {
             pianoCount += 1
             pianoLabel.text = "\(pianoCount) tap"
         } else {
-            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(action)
-            self.present(alert, animated: true, completion: nil)
+            alert()
         }
     }
     
@@ -45,10 +48,7 @@ class ViewController: UIViewController {
             drumCount += 1
             drumLabel.text = "\(drumCount) tap"
         } else {
-            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(action)
-            self.present(alert, animated: true, completion: nil)
+            alert()
         }
     }
     @IBAction func guitarTapped(_ sender: UIButton) {
@@ -56,10 +56,7 @@ class ViewController: UIViewController {
             guitarCount += 1
             guitarLabel.text = "\(guitarCount) tap"
         } else {
-            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(action)
-            self.present(alert, animated: true, completion: nil)
+            alert()
         }
     }
     @IBAction func tromboneTapped(_ sender: UIButton) {
@@ -67,10 +64,7 @@ class ViewController: UIViewController {
             tromboneCount += 1
             tromboneLabel.text = "\(tromboneCount) tap"
         } else {
-            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
-            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
-            alert.addAction(action)
-            self.present(alert, animated: true, completion: nil)
+            alert()
         }
     }
     
