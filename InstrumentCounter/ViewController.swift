@@ -28,6 +28,40 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func pianoTapped(_ sender: UIButton) {
+        if(pianoCount < 8) {
+            pianoCount += 1
+            pianoLabel.text = "\(pianoCount) tap"
+        } else {
+            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    
+    @IBAction func drumTapped(_ sender: UIButton) {
+        if(drumCount < 10) {
+            drumCount += 1
+            drumLabel.text = "\(drumCount) tap"
+        } else {
+            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+    @IBAction func guitarTapped(_ sender: UIButton) {
+        if(guitarCount < 5) {
+            guitarCount += 1
+            guitarLabel.text = "\(guitarCount) tap"
+        } else {
+            let alert = UIAlertController(title: "Message", message: "Your instrument reach the max value", preferredStyle: .alert)
+            let action = UIAlertAction(title: "Ok", style: .default, handler: nil)
+            alert.addAction(action)
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
     @IBAction func tromboneTapped(_ sender: UIButton) {
         if(tromboneCount < 6){
             tromboneCount += 1
@@ -39,6 +73,8 @@ class ViewController: UIViewController {
             self.present(alert, animated: true, completion: nil)
         }
     }
+    
+    
 
 }
 

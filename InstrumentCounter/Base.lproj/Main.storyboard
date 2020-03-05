@@ -70,6 +70,9 @@
                                         <rect key="frame" x="33" y="56" width="118" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="bass-guitar"/>
+                                        <connections>
+                                            <action selector="guitarTapped:" destination="alG-OF-R6T" eventType="touchUpInside" id="xZj-oR-j2p"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txj-tH-7ak">
                                         <rect key="frame" x="20" y="194" width="145" height="40"/>
@@ -108,6 +111,9 @@
                                         <rect key="frame" x="32" y="56" width="119" height="130"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="drum-1"/>
+                                        <connections>
+                                            <action selector="drumTapped:" destination="alG-OF-R6T" eventType="touchUpInside" id="i8Q-ox-7wJ"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -132,6 +138,9 @@
                                         <rect key="frame" x="31" y="54" width="123" height="135"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Button" image="piano"/>
+                                        <connections>
+                                            <action selector="pianoTapped:" destination="alG-OF-R6T" eventType="touchUpInside" id="tcf-fQ-EC5"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0 tap" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d2e-wQ-Vs3">
                                         <rect key="frame" x="20" y="197" width="145" height="37"/>
